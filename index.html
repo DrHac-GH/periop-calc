@@ -16,22 +16,25 @@
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <h1>周術期計算</h1>
-    <div class="version" id="version" aria-live="polite">版 <b class="num">—</b>・更新日 <b class="num">—</b></div>
+    <h1 id="app-name">周術期計算</h1>
+    <div class="topbar-right">
+      <div class="version" id="version" aria-live="polite">版 <b class="num">—</b>・更新日 <b class="num">—</b></div>
+      <button type="button" class="btn small lang" id="lang-toggle" lang="en">English</button>
+    </div>
   </div>
 </header>
 
 <main id="main" tabindex="-1">
-  <noscript><p class="error">この計算ツールは JavaScript を使います。ブラウザの設定で JavaScript を有効にしてください。</p></noscript>
+  <noscript><p class="error">この計算ツールは JavaScript を使います。ブラウザの設定で JavaScript を有効にしてください。 / This tool requires JavaScript. Please enable JavaScript in your browser settings.</p></noscript>
   <p class="note" id="loading">読み込んでいます…</p>
 </main>
 
 <nav class="tabs" aria-label="計算の切り替え">
   <div class="tabs-inner">
-    <button type="button" data-tab="gamma"><span class="glyph">γ</span>γ計算</button>
-    <button type="button" data-tab="table"><span class="glyph">▦</span>早見表</button>
-    <button type="button" data-tab="composition"><span class="glyph">Σ</span>組成合計</button>
-    <button type="button" data-tab="info"><span class="glyph">i</span>情報</button>
+    <button type="button" data-tab="gamma"><span class="glyph">γ</span><span class="tab-label">γ計算</span></button>
+    <button type="button" data-tab="table"><span class="glyph">▦</span><span class="tab-label">早見表</span></button>
+    <button type="button" data-tab="composition"><span class="glyph">Σ</span><span class="tab-label">組成合計</span></button>
+    <button type="button" data-tab="info"><span class="glyph">i</span><span class="tab-label">情報</span></button>
   </div>
 </nav>
 
@@ -40,10 +43,11 @@
 </dialog>
 
 <div class="update-bar" id="update-bar" hidden>
-  <span>新しい版があります</span>
+  <span id="update-text">新しい版があります</span>
   <button type="button" class="btn small" id="update-button">更新する</button>
 </div>
 
+<script src="i18n.js"></script>
 <script src="engine.js"></script>
 <script src="app.js"></script>
 </body>

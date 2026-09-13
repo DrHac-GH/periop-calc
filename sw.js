@@ -1,12 +1,13 @@
 // オフラインで使うためのサービスワーカー。
 // 版（pwa/version.json）が変わると CACHE の名前が変わり、古いキャッシュを捨てて取り直す（build.sh が書き換える）。
-const CACHE = 'periop-calc-0.1.1-2026-09-14';
+const CACHE = 'periop-calc-0.2.0-2026-09-14';
 
 const FILES = [
   './',
   './index.html',
   './style.css',
   './app.js',
+  './i18n.js',
   './engine.js',
   './version.json',
   './manifest.webmanifest',
