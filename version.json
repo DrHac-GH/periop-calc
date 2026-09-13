@@ -1,9 +1,9 @@
 {
-  "version": "0.1.0",
-  "updated": "2026-09-13",
+  "version": "0.1.1",
+  "updated": "2026-09-14",
   "data": {
     "enteral_electrolyte.json": "2026.09.13",
-    "gamma.json": "2026.09.13",
+    "gamma.json": "2026.09.14",
     "parenteral.json": "2026.09.13"
   }
 }
